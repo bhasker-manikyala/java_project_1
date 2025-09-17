@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 Added in master branch
 Add line in master branch
+=======
+Added in feature branch
+>>>>>>> feature
