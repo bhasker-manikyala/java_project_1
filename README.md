@@ -1,1 +1,1 @@
-This is a Java Project for demo
+This is a Java Project for demo purpose
