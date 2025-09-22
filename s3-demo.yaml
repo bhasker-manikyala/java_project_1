@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Simple S3 bucket template'
+
+Resources:
+  MySimpleS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Sub 'my-bucket-${AWS::AccountId}-${AWS::Region}'
+
+Outputs:
+  BucketName:
+    Description: Name of the created S3 bucket
+    Value: !Ref MySimpleS3Bucket
+  BucketArn:
+    Description: ARN of the S3 bucket
+    Value: !GetAtt MySimpleS3Bucket.Arn
